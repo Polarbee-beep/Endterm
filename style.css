@@ -1,0 +1,166 @@
+body {
+    background: #fcfaff;
+    color: #292331;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: #2b1055;
+}
+
+.navbar-brand {
+    color: #dfccf2 !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #e1bee7 !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(43,16,85,.7), rgba(20,5,45,.8)),
+    url("images/background.png") center/cover;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.btn-purple {
+    background: #7b1fa2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-purple:hover {
+    background: #4a148c;
+    color: white;
+}
+
+.card {
+    border: 1px solid #e1bee7;
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+h1, h2, h3 {
+    color: #4a148c;
+}
+
+footer {
+    background: #2b1055;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.custom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px #0001;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.gallery-card-content {
+    padding: 15px;
+}
+
+.favorite-btn {
+    background: #f1e5f8;
+    color: #5d287c;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.favorite-btn.is-favorite {
+    background: #7b1fa2;
+    color: white;
+}
+
+.field-error {
+    color: red;
+    display: block;
+    min-height: 18px;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+.faq-answer {
+    color: #555;
+}
+
+.dark-theme {
+    background: #17121e;
+    color: white;
+}
+
+.dark-theme main,
+.dark-theme .card,
+.dark-theme .gallery-card {
+    background: #261d30;
+    color: white;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
+    color: #dfb8ff;
+}
+
+.dark-theme .gallery-card-content p {
+    color: #ddd;
+}
+
+.dark-theme .form-control,
+.dark-theme .form-select {
+    background: #30263a;
+    color: white;
+}
+
+@media(max-width: 768px) {
+    .custom-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 500px) {
+    .custom-grid {
+        grid-template-columns: 1fr;
+    }
+}
